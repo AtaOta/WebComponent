@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/popup.css">
+    </head>
+    <body>
+
+        <div class="SP_Wrapper">
+            <div class="SP_Blanket">
+                <!-- Header Container -->
+                <div class="Header">
+                    <div class="Return Buttons">
+                        <img src="Icons/return.svg" alt="i">
+                    </div>
+    
+                    <div class="Input">
+                        <form action="#">
+                                <input type="text" id="SearchBox">
+                        </form>
+                    </div>
+                    <div class="Search Buttons">
+                        <img src="Icons/search.svg" alt="i">
+                    </div>
+    
+                    <div 
+                    class="MIC Buttons"
+                    id="MIC">
+                        <img src="Icons/mic.svg" alt="i">
+                    </div>
+                </div>
+                <!-- BODY CONTAINER   Hide_Speech_Text -->
+                <div class="Body">
+                    <div 
+                    class="Speech_Text_Container Hide_Speech_Text"
+                    id="Speech_Text_Container">
+
+                        <div class="Strat_Btin_Wrapper">
+                            <div class="Buttons Start_Btn" id="Start_Btn">
+                                <img src="Icons/mic.svg" alt="i">
+                            </div>
+                        </div>
+
+                        <div class="Text_Recognize" id="Text_Recognize">
+                            
+                        </div>
+                    </div>
+                    <div class="List_content">
+                        Content List
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <script src="js/speech_recognition.js" async defer></script>
+    </body>
+</html>

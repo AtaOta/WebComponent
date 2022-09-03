@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.loader_container{
+    position: fixed;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader::before, .loader::after{
+    content: ' ';
+    border: 2em solid #27C997;
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: preLoader 1s linear infinite;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+.loader::before{
+    animation-delay: 0.2s;
+}
+
+@keyframes preLoader{
+    0%{
+        transform: scale(0.4);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(0.75);
+        opacity: 0.5;
+    }
+    50%{
+        transform: scale(1);
+        opacity: 0.1;
+    }
+    75%{
+        transform: scale(0.75);
+        opacity: 0.5;
+    }
+    100%{
+        transform: scale(0.4);
+        opacity: 0;
+    }
+}
+.mic_icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 100;
+    border-radius: 50%;
+}
+.mic_icon:hover{
+    background-color: #ffc698;
+}
+.text{
+    position: absolute;
+    bottom: -1.5em;
+    font-family: sans-serif;
+    font-weight: bold;
+}
